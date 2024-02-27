@@ -6,7 +6,7 @@ To cite AADaM, please cite [link to be added].
 
 ### INTRODUCTION ###
 
-The Antibody-Antigen Database Maker is python script that takes a SAbDab download dir, and uses it to create benchmark / testing datasets. It may also create complementary training datasets for ML methods that use antibody-antigen structures for training!
+The Antibody-Antigen Database Maker is python script that takes a larger dataset downloaded from SAbDab, and uses it to create benchmark / testing datasets intended for ML-methods. It may also create complementary training datasets for ML methods that use antibody-antigen structures for training!
 
 Structures accepted into the dataset will be required to have below a certain % CDR sequence identity with protein-binding antibody structures released past the training cutoff date (-d flag), to ensure each benchmark is fair with respect to testing ML methods, in that it will contain no close similarities to potential training data. Then within the benchmark, targets are disallowed from sharing a certain % or more sequence identity between heavy chain CDRs, light chain CDRs, and/or any antigen chains to remove redundancy from the benchmark (-cd flag), for the sake of removing representation bias. The and/or is determined by how strict you want to be (-cs flag).
 
