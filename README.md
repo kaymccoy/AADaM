@@ -25,3 +25,9 @@ When one structure "knocks out" another from consideration, the one with fewest 
 To set up AADaM, please first set up Mosaist, located on GitHub at Grigoryanlab/Mosaist.
 
 Then provide your path to Mosaist's lib directory on the 7th line of AntibodyAntigenDatasetMaker.py, replacing "/dartfs/rc/lab/G/Grigoryanlab/home/coy/Mosaist/lib"
+
+
+
+### HELPER SCRIPTS ###
+
+Also included in the repo are helper scripts to IMGT number and otherwise clean up antibody-antigen structures, to search antibody-antigen interfaces for structural motifs, to check the Neff of both paired and single chain MSAs, and to calculate interfacial pLDDT. These scripts may be useful for analyzing antibody-antigen models in your future projects! Those relying on Mosaist similarly require replacing the string for the Mosaist lib to work.
