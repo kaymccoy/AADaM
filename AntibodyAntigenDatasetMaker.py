@@ -17,7 +17,7 @@ import shutil
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--inputDb", dest="inputDb", help="path to the input database, which should be a complete download of all antibodies in complex with protein antigens, and have a summary file ending in 'summary.tsv'")
 parser.add_argument("-d", "--date", dest="date0", help="the date on or after which you want to make your test set; format YYYY/MM/DD")
-parser.add_argument("-cd", "--cutoffDate", dest="cutoffDate", help="a date past which you won't accept structures")
+parser.add_argument("-cd", "--cutoffDate", dest="cutoffDate", help="a date past which you won't accept structures, useful for making training sets; format YYYY/MM/DD")
 parser.add_argument("-c1", "--abCompSeqCut", dest="abCompSeqCut", help="percent sequence ID minimum to disallow an ab-ag complex, based on past ab-ag complexes, comparing H loops to H loops and L loops to L loops")
 parser.add_argument("-c2", "--withinDatasetCut", dest="withinDatasetCut", help="percent sequence ID minimum used for knocking out complexes that are too similar w/ in the database, based on H or L or any antigen chain to any other antigen chain sequence ID")
 parser.add_argument("-m", "--methodsAllowed", dest="methodsAllowed", help="methods allowed, separated by a comma, like 'X-RAY DIFFRACTION,ELECTRON MICROSCOPY'")
